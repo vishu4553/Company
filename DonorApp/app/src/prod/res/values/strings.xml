@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PSI</string>
+    <string name="base_url">https://kafnbrbcch.execute-api.ap-south-1.amazonaws.com/Prod/</string>
+
+</resources>
