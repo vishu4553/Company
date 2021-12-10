@@ -1,4 +1,4 @@
-package com.mitroz.bloodbank.Constant;
+package com.example.donorapp.Constant;
 
 import java.util.concurrent.TimeUnit;
 

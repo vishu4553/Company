@@ -1,4 +1,4 @@
-package com.mitroz.bloodbank.Util;
+package com.example.donorapp.Util;
 
 import android.content.Context;
 

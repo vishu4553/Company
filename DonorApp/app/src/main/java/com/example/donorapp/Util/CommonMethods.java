@@ -1,4 +1,4 @@
-package com.mitroz.bloodbank.Util;
+package com.example.donorapp.Util;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -9,16 +9,13 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.util.Base64;
 import android.widget.EditText;
-import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 
-import com.mitroz.bloodbank.Activity.ActivityAddStock;
-import com.mitroz.bloodbank.Activity.Admin;
-import com.mitroz.bloodbank.Activity.LoginActivity;
-import com.mitroz.bloodbank.Activity.StockActivity;
-import com.mitroz.bloodbank.R;
+
+import com.example.donorapp.Activity.Login;
+import com.example.donorapp.R;
 
 import java.io.ByteArrayOutputStream;
 import java.text.ParseException;
@@ -34,7 +31,7 @@ public class CommonMethods {
         editor.clear();
         editor.apply();
 
-        Intent intent = new Intent(activity, LoginActivity.class);
+        Intent intent = new Intent(activity, Login.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         activity.startActivity(intent);

@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceCategory
+        android:title="@string/title_first_section">
+        <Preference android:title="Logout"
+            android:key="exitlink"/>
+
+       <!-- <CheckBoxPreference
+            android:key="checkbox_preference"
+            android:title="@string/title_checkbox_preference"
+            android:defaultValue="@string/default_checkbox_preference"/>
+
+        <EditTextPreference
+            android:key="edittext_preference"
+            android:title="Edit Text Preference"
+            android:summary="summary_edittext_preference"
+            android:dialogTitle="dialog_title_edittext_preference"
+            android:dependency="checkbox_preference" />-->
+
+    </PreferenceCategory>
 </PreferenceScreen>

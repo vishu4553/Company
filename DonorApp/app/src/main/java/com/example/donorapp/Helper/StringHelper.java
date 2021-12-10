@@ -3,15 +3,16 @@
 //------------------------------------------------------------------------------
 
 
-package com.mitroz.bloodbank.Helper;
+package com.example.donorapp.Helper;
 
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.icu.util.Calendar;
 import android.os.Build;
-import androidx.annotation.RequiresApi;
 import android.util.Patterns;
 import android.webkit.URLUtil;
+
+import androidx.annotation.RequiresApi;
 
 import java.io.IOException;
 import java.io.InputStream;

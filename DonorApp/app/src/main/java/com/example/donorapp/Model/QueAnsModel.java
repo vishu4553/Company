@@ -1,4 +1,4 @@
-package com.mitroz.bloodbank.Model;
+package com.example.donorapp.Model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 
-public class QueAnsModel  implements Serializable {
+public class QueAnsModel implements Serializable {
     int queId;
     String question;
     String ans;

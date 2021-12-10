@@ -1,9 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@null"
+        tools:context=".ui.login.LoginActivity"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="64dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="70dp"
+                android:src="@drawable/share" />
+
+            <TextView
+                android:id="@+id/textViewLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="-40dp"/>
+
+            <EditText
+                android:id="@+id/idEdtPhoneNumber1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxLength="10"
+                android:hint="Enter Mobile number"
+                android:inputType="number"
+                android:layout_marginTop="60dp"/>
+            <Button
+                android:id="@+id/login_otp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="start"
+                android:text="Get OTP"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/one"
+                android:fontFamily="@font/abhaya_libre"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp">
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5sp"
+                    android:background="@color/one" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="-3dp"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:text="OR"
+                    android:textAllCaps="true"
+                    android:textColor="@color/one"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5sp"
+                    android:background="@color/one" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <!--<Button
+                    android:id="@+id/facebook_login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/facebook"
+                    android:background="@drawable/roundead_button"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:text="Log in with Facebook"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />-->
+
+                <!--<Button
+                    android:id="@+id/gmailloginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundead_button_loginwith_shadow"
+                    android:drawablePadding="3dp"
+                    android:padding="8dp"
+                    android:drawableLeft="@drawable/gmail"
+                    android:text="Log in with Gmail"
+                    android:fontFamily="@font/abhaya_libre"
+                    app:backgroundTint="@null"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />-->
+                <com.google.android.gms.common.SignInButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sign_in_button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp">
+                </com.google.android.gms.common.SignInButton>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

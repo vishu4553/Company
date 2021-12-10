@@ -1,32 +1,7 @@
-package com.mitroz.bloodbank.Interface;
+package com.example.donorapp.Interface;
 
-import com.mitroz.bloodbank.Model.AddCallModel;
-import com.mitroz.bloodbank.Model.AddCampModel;
-import com.mitroz.bloodbank.Model.AddDonorModel;
-import com.mitroz.bloodbank.Model.AddOrganiserModel;
-import com.mitroz.bloodbank.Model.AddStock;
-import com.mitroz.bloodbank.Model.AddTesting;
-import com.mitroz.bloodbank.Model.AdminAccounts;
-import com.mitroz.bloodbank.Model.ApprovalModel;
-import com.mitroz.bloodbank.Model.ApproveKilometerModel;
-import com.mitroz.bloodbank.Model.BulkUpload;
-import com.mitroz.bloodbank.Model.CallAssignModel;
-import com.mitroz.bloodbank.Model.DetailsModel;
-import com.mitroz.bloodbank.Model.DiplayStockModel;
-import com.mitroz.bloodbank.Model.ExpenseModel;
-import com.mitroz.bloodbank.Model.GetAttendanceStatus;
-import com.mitroz.bloodbank.Model.GetCallList;
-import com.mitroz.bloodbank.Model.GetHospitalList;
-import com.mitroz.bloodbank.Model.Login;
-import com.mitroz.bloodbank.Model.ProductRateLists;
-import com.mitroz.bloodbank.Model.ServiceBoyModel;
-import com.mitroz.bloodbank.Model.SetRequisitionModel;
-import com.mitroz.bloodbank.Model.SettlementModel;
-import com.mitroz.bloodbank.Model.VersionInfoModel;
-import com.mitroz.bloodbank.Model.ViewCampModel;
-import com.mitroz.bloodbank.Model.ViewStockModel;
-import com.mitroz.bloodbank.Model.ViewStockbyProductIdModel;
-import com.mitroz.bloodbank.Model.addPetrolModel;
+
+import com.example.donorapp.Model.AddDonorModel;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -37,7 +12,7 @@ import retrofit2.http.POST;
 public interface Api {
     String BASE_URL = "https://kafnbrbcch.execute-api.ap-south-1.amazonaws.com/Prod/";
 
-    @POST("api/auth/token")
+   /* @POST("api/auth/token")
     Call<Login> getLogin(@Body Login loginRequest, @Header("Content-Type") String contenttype);
 
     @POST("api/Stock/AddStock")
@@ -136,5 +111,8 @@ public interface Api {
     Call<AddDonorModel> addDonor(@Body AddDonorModel addDonorModel, @Header("Content-Type") String contenttype, @Header("Authorization") String token);
 
     @POST("api/Stock/AddOrgniser")
-    Call<AddOrganiserModel> addOrganiser(@Body AddOrganiserModel addOrganiserModel, @Header("Content-Type") String contenttype, @Header("Authorization") String token);
+    Call<AddOrganiserModel> addOrganiser(@Body AddOrganiserModel addOrganiserModel, @Header("Content-Type") String contenttype, @Header("Authorization") String token);*/
+   @POST("api/Stock/AddDonor")
+   Call<AddDonorModel> addDonor(@Body AddDonorModel addDonorModel, @Header("Content-Type") String contenttype, @Header("Authorization") String token);
+
 }

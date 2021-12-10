@@ -1,4 +1,4 @@
-package com.mitroz.bloodbank.Util;
+package com.example.donorapp.Util;
 
 import android.Manifest;
 import android.app.Activity;
@@ -13,12 +13,11 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
 
-import android.util.Log;
-
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.FileProvider;
 
-import com.mitroz.bloodbank.BuildConfig;
+
+import com.example.donorapp.BuildConfig;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -28,13 +27,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import id.zelory.compressor.Compressor;
-
-import static com.mitroz.bloodbank.Constant.ConstatsValue.SelectImageTypes.GALLERY_DIRECTORY_NAME;
-import static com.mitroz.bloodbank.Constant.ConstatsValue.SelectImageTypes.IMAGE_EXTENSION;
-import static com.mitroz.bloodbank.Constant.ConstatsValue.SelectImageTypes.MEDIA_TYPE_IMAGE;
-import static com.mitroz.bloodbank.Constant.ConstatsValue.SelectImageTypes.MEDIA_TYPE_VIDEO;
-import static com.mitroz.bloodbank.Constant.ConstatsValue.SelectImageTypes.VIDEO_EXTENSION;
+import static com.example.donorapp.Constant.ConstatsValue.SelectImageTypes.GALLERY_DIRECTORY_NAME;
+import static com.example.donorapp.Constant.ConstatsValue.SelectImageTypes.IMAGE_EXTENSION;
+import static com.example.donorapp.Constant.ConstatsValue.SelectImageTypes.MEDIA_TYPE_IMAGE;
+import static com.example.donorapp.Constant.ConstatsValue.SelectImageTypes.MEDIA_TYPE_VIDEO;
+import static com.example.donorapp.Constant.ConstatsValue.SelectImageTypes.VIDEO_EXTENSION;
 
 public class CameraUtils {
     private String uploadImageString = "";
@@ -178,7 +175,7 @@ public class CameraUtils {
         //compressedImageBitmap= BitmapFactory.decodeFile( compressedFilePath.toString().substring(1,compressedFilePath.toString().length()-1));
 
         try {
-            compressedImageBitmap = new Compressor(context).compressToBitmap(imageFile);
+           // compressedImageBitmap = new Compressor(context).compressToBitmap(imageFile);
         } catch (Exception e) {
             e.printStackTrace();
         }

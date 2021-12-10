@@ -1,4 +1,4 @@
-package com.mitroz.bloodbank.Model;
+package com.example.donorapp.Model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

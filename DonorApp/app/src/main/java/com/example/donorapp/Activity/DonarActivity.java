@@ -1,54 +1,63 @@
-package com.mitroz.bloodbank.Activity;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.donorapp.Activity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Base64;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.donorapp.Constant.ConstatsValue;
+import com.example.donorapp.Faqs;
+import com.example.donorapp.Helper.NetworkHelper;
+import com.example.donorapp.Interface.OnClickHome;
+import com.example.donorapp.Model.AddDonorModel;
+import com.example.donorapp.Model.QueAnsModel;
+import com.example.donorapp.R;
+import com.example.donorapp.RetrofitClient;
+import com.example.donorapp.Signature;
+import com.example.donorapp.Util.CommonMethods;
+import com.example.donorapp.Util.SharedPreference;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipDrawable;
 import com.google.android.material.chip.ChipGroup;
-import com.kyanogen.signatureview.SignatureView;
-import com.mitroz.bloodbank.Constant.ConstatsValue;
-import com.mitroz.bloodbank.Helper.NetworkHelper;
-import com.mitroz.bloodbank.Interface.OnClickHome;
-import com.mitroz.bloodbank.Model.AddCampModel;
-import com.mitroz.bloodbank.Model.AddDonorModel;
-import com.mitroz.bloodbank.R;
-import com.mitroz.bloodbank.RetrofitClient;
-import com.mitroz.bloodbank.Siganture;
-import com.mitroz.bloodbank.Util.CommonMethods;
-import com.mitroz.bloodbank.Util.SharedPreference;
 
+import java.io.ByteArrayOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-import static com.mitroz.bloodbank.Constant.ConstatsValue.INTENT_KEYS.BEARER;
-import static com.mitroz.bloodbank.Util.CommonMethods.getLocalToUTCDateSurveyChangeFormat;
+import static com.example.donorapp.Constant.ConstatsValue.INTENT_KEYS.BEARER;
+import static com.example.donorapp.Util.CommonMethods.getLocalToUTCDateSurveyChangeFormat;
 
-public class DonarActivity extends AppCompatActivity  implements OnClickHome {
+public class DonarActivity extends AppCompatActivity implements OnClickHome {
     private ChipGroup chipGroup;
     private String selectedChipText;
-    EditText etOtherChip,etDName,etDAddress, etDContact, etDEmail, etDAge, etDweight,etDHeight, etDBloodpressure;
-    TextView txtSignature, txtFAQs;
-    private TextView txtDonationDate, txtDob;
+    CheckBox checkBoxFAQs;
+    EditText etOtherChip,etDName,etDAddress, etDContact, etDEmail, etDAge, etDweight,etDHeight, etDBloodpressure, edCampCode;
+    TextView txtSignature,txtDonationDate, txtDob;
     Button btn_donor_save;
     final Calendar myCalendar1 = Calendar.getInstance();
     String selectedDate, selectedDob;
@@ -57,12 +66,19 @@ public class DonarActivity extends AppCompatActivity  implements OnClickHome {
     String selectedGender="Male";
     private SharedPreference preference;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    String signImage;
+    ImageView imageSignature;
+    private boolean isCheckedValue;
+    private static final int SECOND_ACTIVITY_REQUEST_CODE = 0;
+    private  static final int   FAQ_ACTIVITY_REQUEST_CODE = 1;
+    List<QueAnsModel> QueAnsList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donar);
 
         preference = new SharedPreference();
+        edCampCode = findViewById(R.id.campCode);
         etDName = findViewById(R.id.d_name);
         etDAddress = findViewById(R.id.d_address);
         etDContact = findViewById(R.id.d_contact_no);
@@ -78,11 +94,27 @@ public class DonarActivity extends AppCompatActivity  implements OnClickHome {
         bt_male = findViewById(R.id.male);
         bt_female = findViewById(R.id.female);
         bt_other = findViewById(R.id.other);
+        checkBoxFAQs = findViewById(R.id.chkFAQs);
         txtSignature = findViewById(R.id.txtSignature);
+        imageSignature = findViewById(R.id.imageViewSignature);
         txtSignature.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DonarActivity.this, Siganture.class));
+                Intent intent = new Intent(DonarActivity.this, Signature.class);
+                startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE);
+            }
+        });
+        checkBoxFAQs.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(checkBoxFAQs.isChecked()){
+                    isCheckedValue = isChecked; //first set value then assign to boolean extra.
+
+                    Intent intent = new Intent(DonarActivity.this, Faqs.class);
+                    intent.putExtra("yourBoolName", isCheckedValue );
+                    startActivity(intent);
+
+                }
             }
         });
 
@@ -124,6 +156,22 @@ public class DonarActivity extends AppCompatActivity  implements OnClickHome {
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == SECOND_ACTIVITY_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                Bitmap bitmap = BitmapFactory.decodeByteArray(data.getByteArrayExtra("byteArray"),0,data.getByteArrayExtra("byteArray").length);
+                signImage = encodeTobase64(bitmap);
+                imageSignature.setImageBitmap(bitmap);
+            }else  if (requestCode == FAQ_ACTIVITY_REQUEST_CODE) {
+                if (resultCode == RESULT_OK) {
+                    QueAnsList = (ArrayList<QueAnsModel>) data.getSerializableExtra("ARRAYLIST");
+                    Log.d("test", QueAnsList.toString());
+                }
+            }
+        }
+    }
     private void setTag() {
         ArrayList<String> tagList = new ArrayList<>();
         tagList.add("A+");
@@ -157,8 +205,8 @@ public class DonarActivity extends AppCompatActivity  implements OnClickHome {
                 public void onClick(View v) {
 //                    tagList.remove(tagName);
 //                    chipGroup.removeView(chip);
-                    chip.setTextColor(getResources().getColor(R.color.white));
-                    chip.setChipBackgroundColorResource(R.color.colorPrimaryDark);
+                    chip.setTextColor(getResources().getColor(R.color.circuler_gray));
+                     chip.setChipBackgroundColorResource(R.color.colorPrimaryDark);
                 }
             });
             chipGroup.setOnCheckedChangeListener(new ChipGroup.OnCheckedChangeListener() {
@@ -176,8 +224,8 @@ public class DonarActivity extends AppCompatActivity  implements OnClickHome {
                     }
                 }
             });
-            chip.setChipBackgroundColor(getResources().getColorStateList(R.color.bg_chip_state_list));
-            chip.setTextColor(getResources().getColorStateList(R.color.bg_chip_text));
+            chip.setChipBackgroundColor(getResources().getColorStateList(R.color.circuler_gray));
+            chip.setTextColor(getResources().getColorStateList(R.color.colorPrimaryDark));
 
             chipGroup.addView(chip);
         }
@@ -254,6 +302,11 @@ public class DonarActivity extends AppCompatActivity  implements OnClickHome {
             hitAddDonor();
         }
     }
+
+    @Override
+    public void onClickHome(View view) {
+
+    }
     private void hitAddDonor() {
         AddDonorModel model = new AddDonorModel();
         model.setDonorName(etDName.getText().toString());
@@ -268,6 +321,7 @@ public class DonarActivity extends AppCompatActivity  implements OnClickHome {
         model.setHeight(etDHeight.getText().toString());
         model.setBloodGroup(selectedChipText);
         model.setBloodPressure(etDBloodpressure.getText().toString());
+       // model.setSign(signImage);
 
         Call<AddDonorModel> call = RetrofitClient.getInstance().getMyApi().addDonor(model, "application/json; charset=utf-8", BEARER + preference.getStringValue(this, ConstatsValue.INTENT_KEYS.Token));
         call.enqueue(new Callback<AddDonorModel>() {
@@ -290,8 +344,13 @@ public class DonarActivity extends AppCompatActivity  implements OnClickHome {
             }
         });
     }
-    @Override
-    public void onClickHome(View view) {
-        finish();
+
+    public static String encodeTobase64(Bitmap image) {
+        Bitmap immagex = image;
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        immagex.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        byte[] b = baos.toByteArray();
+        String imageEncoded = Base64.encodeToString(b, Base64.DEFAULT);
+        return imageEncoded;
     }
 }

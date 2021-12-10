@@ -1,15 +1,11 @@
-package com.mitroz.bloodbank.Helper;
+package com.example.donorapp.Helper;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.mitroz.bloodbank.Constant.ConstatsValue;
+import com.example.donorapp.Constant.ConstatsValue;
 
-
-/**
- *
- */
 
 public class NetworkHelper {
 
