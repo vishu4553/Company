@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "94405251428",
+    "firebase_url": "https://hubcollege-b099c.firebaseio.com",
+    "project_id": "hubcollege-b099c",
+    "storage_bucket": "hubcollege-b099c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94405251428:android:ab3c2fa5bcdcff4c70aa71",
+        "android_client_info": {
+          "package_name": "com.example.ukarsha.hub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94405251428-a6pdpp3al6l0uaqb6hav83tpldh969i6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhVLDD43wHNHlum7QQDnI9MJqyatMT7hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94405251428-a6pdpp3al6l0uaqb6hav83tpldh969i6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <stroke android:width="2dp" android:color="#fff" />
+            <!--<stroke android:width="2dp" android:color="#edebeb" />-->
+
+            <solid android:color="@android:color/transparent" />
+
+            <corners android:bottomLeftRadius="5dp"
+                android:bottomRightRadius="5dp"
+                android:topLeftRadius="5dp"
+                android:topRightRadius="5dp" />
+        </shape>
+    </item>
+
+</selector>
+
+<!--
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:shape="rectangle">
+&lt;!&ndash;  Gradient Bg for listrow &ndash;&gt;
+
+
+<corners android:bottomLeftRadius="5dp"
+    android:bottomRightRadius="5dp"
+    android:topLeftRadius="5dp"
+    android:topRightRadius="5dp" />
+<gradient
+    android:startColor="#f1f1f2"
+    android:centerColor="#e7e7e8"
+    android:endColor="#d2d2d2"
+    android:angle="270" />
+</shape>-->

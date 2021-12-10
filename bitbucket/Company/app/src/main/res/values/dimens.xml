@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">150dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+    //Width
+    <dimen name="width_390">390dp</dimen>
+    <dimen name="width_360">360dp</dimen>
+    <dimen name="width_350">350dp</dimen>
+    <dimen name="width_340">340dp</dimen>
+    <dimen name="width_330">330dp</dimen>
+    <dimen name="width_325">325dp</dimen>
+    <dimen name="width_320">320dp</dimen>
+    <dimen name="width_310">310dp</dimen>
+    <dimen name="width_300">300dp</dimen>
+    <dimen name="width_290">290dp</dimen>
+    <dimen name="width_280">280dp</dimen>
+    <dimen name="width_270">270dp</dimen>
+    <dimen name="width_260">260dp</dimen>
+    <dimen name="width_240">240dp</dimen>
+    <dimen name="width_220">220dp</dimen>
+    <dimen name="width_200">200dp</dimen>
+    <dimen name="width_210">210dp</dimen>
+    <dimen name="width_180">180dp</dimen>
+    <dimen name="width_170">170dp</dimen>
+    <dimen name="width_160">160dp</dimen>
+    <dimen name="width_150">150dp</dimen>
+    <dimen name="width_140">140dp</dimen>
+    <dimen name="width_130">130dp</dimen>
+    <dimen name="width_120">120dp</dimen>
+    <dimen name="width_110">110dp</dimen>
+    <dimen name="width_100">100dp</dimen>
+    <dimen name="width_90">90dp</dimen>
+    <dimen name="width_80">80dp</dimen>
+    <dimen name="width_70">70dp</dimen>
+    <dimen name="width_60">60dp</dimen>
+    <dimen name="width_50">50dp</dimen>
+    <dimen name="width_40">40dp</dimen>
+    <dimen name="width_30">30dp</dimen>
+    <dimen name="width_5">5dp</dimen>
+    <dimen name="width_2">2dp</dimen>
+    <dimen name="width_1">1dp</dimen>
+
+
+    //Height
+    <dimen name="height_350">350dp</dimen>
+    <dimen name="height_230">230dp</dimen>
+    <dimen name="height_240">240dp</dimen>
+    <dimen name="height_220">220dp</dimen>
+    <dimen name="height_200">200dp</dimen>
+    <dimen name="height_180">180dp</dimen>
+    <dimen name="height_170">170dp</dimen>
+    <dimen name="height_165">165dp</dimen>
+    <dimen name="height_160">160dp</dimen>
+    <dimen name="height_150">150dp</dimen>
+    <dimen name="height_140">140dp</dimen>
+    <dimen name="height_130">130dp</dimen>
+    <dimen name="height_120">120dp</dimen>
+    <dimen name="height_110">110dp</dimen>
+    <dimen name="height_100">100dp</dimen>
+    <dimen name="height_90">90dp</dimen>
+    <dimen name="height_80">80dp</dimen>
+    <dimen name="height_70">70dp</dimen>
+    <dimen name="height_60">60dp</dimen>
+    <dimen name="height_55">55dp</dimen>
+    <dimen name="height_50">50dp</dimen>
+    <dimen name="height_45">45dp</dimen>
+    <dimen name="height_47">47dp</dimen>
+    <dimen name="height_40">40dp</dimen>
+    <dimen name="height_35">35dp</dimen>
+    <dimen name="height_30">30dp</dimen>
+    <dimen name="height_20">20dp</dimen>
+    <dimen name="height_5">5dp</dimen>
+    <dimen name="height_2">2dp</dimen>
+    <dimen name="height_1">1dp</dimen>
+
+    /Margin
+    <dimen name="primary_button_height">35dp</dimen>
+    <dimen name="margin_0_5">0.5dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="pic_size">80dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_extra_large">10dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_38">38dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_45">45dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_55">55dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_65">65dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_75">75dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_85">85dp</dimen>
+    <dimen name="margin_90">90dp</dimen>
+    <dimen name="margin_95">95dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_105">105dp</dimen>
+    <dimen name="margin_110">110dp</dimen>
+    <dimen name="margin_115">115dp</dimen>
+    <dimen name="margin_120">120dp</dimen>
+    <dimen name="margin_125">125dp</dimen>
+    <dimen name="margin_130">130dp</dimen>
+    <dimen name="margin_135">135dp</dimen>
+    <dimen name="margin_140">140dp</dimen>
+    <dimen name="margin_150">150dp</dimen>
+    <dimen name="margin_155">155dp</dimen>
+    <dimen name="margin_160">160dp</dimen>
+    <dimen name="margin_165">165dp</dimen>
+    <dimen name="margin_170">170dp</dimen>
+    <dimen name="margin_180">180dp</dimen>
+    <dimen name="margin_190">190dp</dimen>
+    <dimen name="margin_200">200dp</dimen>
+    <dimen name="margin_210">210dp</dimen>
+    <dimen name="margin_220">220dp</dimen>
+    <dimen name="margin_230">230dp</dimen>
+    <dimen name="margin_250">250dp</dimen>
+    <dimen name="margin_240">240dp</dimen>
+    <dimen name="margin_260">260dp</dimen>
+    <dimen name="margin_280">280dp</dimen>
+    <dimen name="margin_300">300dp</dimen>
+    <dimen name="margin_320">320dp</dimen>
+    <dimen name="margin_340">340dp</dimen>
+    <dimen name="margin_350">350dp</dimen>
+    <dimen name="margin_360">360dp</dimen>
+    <dimen name="margin_370">370dp</dimen>
+    <dimen name="margin_380">380dp</dimen>
+    <dimen name="margin_390">390dp</dimen>
+    <dimen name="margin_500">500dp</dimen>
+    <dimen name="margin_540">540dp</dimen>
+    <dimen name="margin_580">580dp</dimen>
+
+    <dimen name="margin_term">50dp</dimen>
+    <dimen name="margin_large">8dp</dimen>
+    <dimen name="margin">5dp</dimen>
+    <dimen name="margin_small">3dp</dimen>
+    <dimen name="gap_name_pic">20dp</dimen>
+
+    //Textsize
+    <dimen name="text_40">40sp</dimen>
+    <dimen name="text_35">35sp</dimen>
+    <dimen name="text_30">30sp</dimen>
+    <dimen name="text_28">28sp</dimen>
+    <dimen name="text_26">26sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_21">26sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="logo_height">40dp</dimen>
+    <dimen name="bottom_logo_size">200dp</dimen>
+
+
+    <dimen name="margin_very_small">1dp</dimen>
+    <dimen name="margin_extra__extra_large">15dp</dimen>
+    <dimen name="toolbar_bottom_line">1dp</dimen>
+    <dimen name="message_count_tv_padding">2dp</dimen>
+    <dimen name="message_count_tv_min_size">20dp</dimen>
+
+    <dimen name="corner_round">20dp</dimen>
+    <dimen name="image_size">80dp</dimen>
+    <dimen name="image_size_m">75dp</dimen>
+    <dimen name="image_size_meet">60dp</dimen>
+    <dimen name="image_size_1">90dp</dimen>
+    <!--DIALOG-->
+    <dimen name="dialog_contain_btn_margin">25dp</dimen>
+    <!--ANIMATIONS-->
+    <integer name="anim_duration">400</integer>
+    <integer name="anim_duration_long">600</integer>
+
+    <!--LOGIN SCREEN-->
+    <dimen name="logo_margin_top">40dp</dimen>
+    <dimen name="minimum_height_dialog">150dp</dimen>
+    <dimen name="line_height_dialog">0.8dp</dimen>
+
+    <!--VERIFY SCREEN-->
+    <dimen name="edittext_min_height">35dp</dimen>
+
+    <!--FORGOT PASSWORD-->
+
+
+    <dimen name="padding_survey_list_right">5dp</dimen>
+    <dimen name="size_15dp">15dp</dimen>
+    <dimen name="size_18p">18dp</dimen>
+    <dimen name="size_12dp">12dp</dimen>
+    <dimen name="size_9dp">9dp</dimen>
+
+    <dimen name="primaryButtonMinHeight">40dp</dimen>
+    <dimen name="secondaryButtonMinHeight">35dp</dimen>
+    <dimen name="primaryButtonText">16sp</dimen>
+
+    <dimen name="ic_delete">30dp</dimen>
+
+    <dimen name="activity_horizontal_margin1">16dp</dimen>
+    <dimen name="activity_vertical_margin1">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <dimen name="margin_large1">8dp</dimen>
+    <dimen name="margin_small1">3dp</dimen>
+    <dimen name="text_181">18sp</dimen>
+
+
+    <item name="match_parent" format="integer" type="dimen">-1</item>
+    <item name="wrap_content" format="integer" type="dimen">-2</item>
+
+    <dimen name="auth_page_margin">24dp</dimen>
+    <dimen name="folded_size">20sp</dimen>
+    <dimen name="unfolded_size">40sp</dimen>
+    <dimen name="option_size">56dp</dimen>
+    <dimen name="text_padding">16dp</dimen>
+    <dimen name="input_width">220dp</dimen>
+    <dimen name="label_size">20sp</dimen>
+    <dimen name="folded_label_padding">22sp</dimen>
+    <dimen name="logo_size">64dp</dimen>
+
+    <dimen name="guideline_margin">56dp</dimen>
+    <dimen name="image_header_dimen">100dp</dimen>
+    <dimen name="image_header_top_margin">50dp</dimen>
+    <dimen name="login_layout_padding">8dp</dimen>
+    <dimen name="login_layout_padding_top">36dp</dimen>
+    <dimen name="login_button_margin">16dp</dimen>
+
+    //for padding
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_25">25dp</dimen>
+    <dimen name="padding_30">30dp</dimen>
+    <dimen name="padding_35">35dp</dimen>
+    <dimen name="padding_40">40dp</dimen>
+    <dimen name="padding_45">45dp</dimen>
+    <dimen name="padding_50">50dp</dimen>
+    <dimen name="padding_60">60dp</dimen>
+    <dimen name="padding_70">70dp</dimen>
+    <dimen name="padding_80">80dp</dimen>
+    <dimen name="padding_90">90dp</dimen>
+    <dimen name="padding_100">100dp</dimen>
+    <dimen name="padding_110">110dp</dimen>
+    <dimen name="padding_120">120dp</dimen>
+    <dimen name="padding_130">130dp</dimen>
+    <dimen name="padding_140">140dp</dimen>
+    <dimen name="padding_6">6dp</dimen>
+    <dimen name="padding_7">7dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_9">9dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+
+</resources>

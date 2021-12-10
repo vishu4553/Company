@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#01606c</color>
+    <color name="colorAccent">#007382</color>
+    <color name="white">@android:color/white</color>
+    <color name="dark_grey">#808080</color>
+    <color name="back_dark_color">#081023</color>
+    <color name="snac_bar_bg">@color/text_color</color>
+    <color name="text_color">#0C5170</color>
+    <color name="snac_bar_text">#BFCFE8</color>
+    <color name="light_gray">#ddd</color>
+    <color name="light_gray1">#eee</color>
+    <color name="black_text">#383838</color>
+    <color name="black">#000000</color>
+    <color name="color_pre">#737272</color>
+    <color name="green">#20c5a0</color>
+    <color name="dark_green">#18a686</color>
+    <color name="one">#007382</color>
+    <color name="two">#007380</color>
+    <color name="three">#059dab</color>
+    <color name="four">#9bc8cd</color>
+    <color name="five">#08a0ae</color>
+    <color name="six">#07a0ae</color>
+    <color name="seven">#6dd1cf</color>
+    <color name="eight">#44c0c0</color>
+    <color name="nine">#09a3af</color>
+    <color name="ten">#66aab3</color>
+    <color name="eleven">#9ac7cd</color>
+    <color name="twelve"></color>
+    <color name="clr_pri">#3F51B5</color>
+    <color name="fin_dark">#007382</color>
+    <color name="fin_light">#9bc8cd</color>
+
+</resources>
+

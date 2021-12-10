@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">ConsultUs2Day</string>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <string name="transition_string">hello</string>
+    <string name="registration">Registration</string>
+    <string name="company_name">Company Name</string>
+    <string name="name_hint">Enter Name</string>
+    <string name="email">Email</string>
+    <string name="password_send">Password is send in your Mail Check Your Inbox!!</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="mobile_hint">Enter Contact Number</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="cpassword">Confirm Password</string>
+    <string name="post">Position</string>
+    <string name="cpassword_hint">Re-Enter Password</string>
+    <string name="post_dt">Date of Post</string>
+    <string name="visit_dt">Date of Visit</string>
+    <string name="technolgy">Technology</string>
+    <string name="job_type">Job Type</string>
+    <string name="vacancy">Vacancy</string>
+    <string name="empty_msg">List is Empty...No Data</string>
+    <string name="job_title">Job Title</string>
+    <string name="address">Enter Address</string>
+    <string name="website">Enter Your Website</string>
+    <string name="drive_info">Drive Info</string>
+    <string name="training_info">Training Info</string>
+    <string name="city">Enter City</string>
+    <string name="save">Save</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="register">Register</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="login">Login</string>
+    <string name="submit">Submit</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="profile">Profile</string>
+    <string name="back">Return to Login</string>
+    <string name="back1">Back</string>
+    <string name="about_us">Profile:   Profile created;can View,Modify it.\n
+    Posting:   Posting related to Campus drive,Industrial visit and Job;Get Get Glances of details of all the posting.\n
+    Post jobs  helps list relevant data that attract great candidates rather than listing requirements and qualifications</string>
+    <string name="clear">Clear</string>
+    <string name="title">Attention</string>
+    <string name="reset">Reset</string>
+    <string name="register_msg"></string>
+
+    <string name="about1">About</string>
+    <string name="remember">Keep me Signed</string>
+    <string name="welcome">It’s always being a good idea of the direction in which you are heading in –
+        and the opportunities available to you.With this in mind, we have ConsultUsToday Application,
+        a  guidance based on the values that matter to you most.</string>
+    <string name="welcome1">Welcome to\nCyberathon</string>
+    <string name="abt">We have ConsultUsToday \nApplication,A  guidance \nthrough which will be \nconnected.</string>
+    <string name="abt1">We have ConsultUsToday Application,A  guidance through which we will be connected.
+    </string>
+    <string name="prof">Certain profile has been created ;read edit view modify it</string>
+    <string name="release">We have Released Version 1.0 and Next Update is Coming Soon till then Stay Tuned...! </string>
+    <string name="posting">Posting related to Campus drive,Industrial visit and Job </string>
+    <string name="glances">Get Glances of details\nof all the posting.</string>
+    <string name="hist">Post jobs  helps list relevant data that attract great candidates rather than listing requirements and qualifications</string>
+
+    <string name="do_you">Do you want to exit app?</string>
+    <string name="limit_exceed_title">Size Exceeds</string>
+    <string name="ok">Ok</string>
+    <string name="error_permisition_not_grant">Permission not granted.</string>
+    <string name="image_dialog_option_camera">Camera</string>
+    <string name="image_dialog_option_gallery">Choose Photo from Library </string>
+    <string name="error_title">Error</string>
+    <string name="error_someting_went_wrong">Something went wrong.Please try again later.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="gen_please_wait">Please Wait</string>
+    <string name="gen_pdf_file">Generate Pdf</string>
+
+    <string name="message_loading">Loading Please wait...</string>
+    <string name="error_authentication">Login failed</string>
+    <string name="error_server_error">Server error.</string>
+    <string name="error_no_network">Please check your connection or try again in a few minutes.</string>
+    <string name="something_went_">Something went Wrong</string>
+    <string name="timeout_error">TimeOut error.</string>
+    <string name="generic_error">Generic error.</string>
+    <string name="error_sign_in_username">Please enter your email address.</string>
+    <string name="error_sign_in_pass">Please enter your password.</string>
+    <string name="something_went">something went wrong</string>
+
+    <string-array name="edit">
+        <item>You can also edit the data</item>
+    </string-array>
+</resources>

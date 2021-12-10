@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ukarsha.hub.activity.NoNetwork"
+    android:gravity="center"
+    android:padding="@dimen/padding_20"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <!--  <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/width_200"
+                android:layout_height="@dimen/height_200"
+                android:src="@drawable/circled_96"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_60"
+                android:layout_marginBottom="@dimen/margin_20"/>
+
+        </FrameLayout>-->
+
+        <ImageView
+            android:layout_width="@dimen/width_160"
+            android:layout_height="@dimen/height_160"
+            android:src="@drawable/cry1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OOPS!"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_22"
+            android:textColor="@color/black_text"
+            android:layout_marginTop="@dimen/margin_20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO INTERNET"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_22"
+            android:textColor="@color/black_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please check if your WIFI or Mobile Network is Switched on."
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/black_text"
+            android:layout_marginTop="@dimen/margin_10"/>
+    </LinearLayout>
+
+</RelativeLayout>
